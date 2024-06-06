@@ -119,3 +119,4 @@ def add_prefix_suffix(input_string, prefix='', suffix=''):
 
     else:
         return input_string
+    
