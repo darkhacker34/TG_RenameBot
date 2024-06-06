@@ -6,7 +6,7 @@ from helper.database import db
 async def add_caption(client, message):
 
     if len(message.command) == 1:
-        return await message.reply_text("**__Give The Prefix__\n\nExᴀᴍᴩʟᴇ: `/set_prefix @Roofiverse`**")
+        return await message.reply_text("**__Give The Prefix__\n\nExᴀᴍᴩʟᴇ: `/set_prefix @MV_Rockers`**")
     prefix = message.text.split(" ", 1)[1]
     SnowDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     await db.set_prefix(message.from_user.id, prefix)
@@ -40,7 +40,7 @@ async def see_caption(client, message):
 async def add_csuffix(client, message):
 
     if len(message.command) == 1:
-        return await message.reply_text("**__Give The Suffix__\n\nExᴀᴍᴩʟᴇ: `/set_suffix @Roofiverse`**")
+        return await message.reply_text("**__Give The Suffix__\n\nExᴀᴍᴩʟᴇ: `/set_suffix @MV_Rockers`**")
     suffix = message.text.split(" ", 1)[1]
     SnowDev = await message.reply_text("Please Wait ...", reply_to_message_id=message.id)
     await db.set_suffix(message.from_user.id, suffix)
@@ -67,3 +67,4 @@ async def see_csuffix(client, message):
         await SnowDev.edit(f"**ʏᴏᴜʀ ꜱᴜꜰꜰɪx:**\n\n`{suffix}`")
     else:
         await SnowDev.edit("__**😔 ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀɴʏ ꜱᴜꜰꜰɪx**__")
+        
