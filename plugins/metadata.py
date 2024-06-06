@@ -56,3 +56,4 @@ async def query_metadata(bot: Client, query: CallbackQuery):
             await ms.edit("**Your Metadta Code Set Successfully ✅**")
         except Exception as e:
             print(e)
+            
