@@ -70,19 +70,19 @@ Exᴀᴍᴩʟᴇ: <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 ⏰ Dᴜʀᴀᴛɪᴏɴ: {duration} </code>
 
 
-📼 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ <a href=https://telegra.ph/file/f8fced59681fb8d0b4320.jpg>Mᴇᴛᴀᴅᴀᴛᴀ</a></u></b>
+📼 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ <a href=https://telegra.ph/METADATA-06-06-7>Mᴇᴛᴀᴅᴀᴛᴀ</a></u></b>
 
-<b>•></b> /metadata - Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴛ <a href=https://telegra.ph/file/f8fced59681fb8d0b4320.jpg>Mᴇᴛᴀᴅᴀᴛᴀ Cᴏᴅᴇ</a>
+<b>•></b> /metadata - Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴛ <a href=https://telegra.ph/METADATA-06-06-7>Mᴇᴛᴀᴅᴀᴛᴀ Cᴏᴅᴇ</a>
 
 
- b><u>Hᴏᴡ Tᴏ Sᴇᴛ  <a href=https://telegra.ph/file/40ac3e17e25293f3e09af.jpg>Pʀᴇғɪx</a></u></b>
+ b><u>Hᴏᴡ Tᴏ Sᴇᴛ  <a href=https://telegra.ph/PREFIX-06-06-7>Pʀᴇғɪx</a></u></b>
 
 <b>•></b> /set_prefix - Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴛ Pʀᴇғɪx
 <b>•></b> /see_prefix - Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴇ Cᴜʀʀᴇɴᴛ Pʀᴇғɪx
 <b>•></b> /del_prefix - Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Dᴇʟᴇᴛᴇ Pʀᴇғɪx
 
 
-📑 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ  <a href=https://telegra.ph/file/10eb85d77d8886e558986.jpg>Sᴜғғɪx</a></u></b>
+📑 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ  <a href=https://telegra.ph/SUFFIX-06-06-8>Sᴜғғɪx</a></u></b>
 
 <b>•></b> /set_suffix - Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴛ Sᴜғғɪx
 <b>•></b> /see_suffix - Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴇ Cᴜʀʀᴇɴᴛ Sᴜғғɪx
