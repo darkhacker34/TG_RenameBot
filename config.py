@@ -40,21 +40,21 @@ class Config(object):
 class Txt(object):
     # part of text configuration
     START_TXT = """<b>Hᴀɪ {} 👋,
-Tʜɪs Is Aɴ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Yᴇᴛ Pᴏᴡᴇʀꜰᴜʟ Rᴇɴᴀᴍᴇ Bᴏᴛ
+Tʜɪs Is Aɴ Aᴅᴠᴀɴᴄᴇᴅ Aɴᴅ Yᴇᴛ Pᴏᴡᴇʀꜰᴜʟ Rᴇɴᴀᴍᴇ Bᴏᴛ.
 Usɪɴɢ Tʜɪs Bᴏᴛ Yᴏᴜ Cᴀɴ Rᴇɴᴀᴍᴇ & Cʜᴀɴɢᴇ Tʜᴜᴍʙɴᴀɪʟ Oꜰ Yᴏᴜʀ Fɪʟᴇ
-Yᴏᴜ Cᴀɴ Aʟsᴏ Cᴏɴᴠᴇʀᴛ Vɪᴅᴇᴏ Tᴏ Fɪʟᴇ & Fɪʟᴇ Tᴏ Vɪᴅᴇᴏ
+Yᴏᴜ Cᴀɴ Aʟsᴏ Cᴏɴᴠᴇʀᴛ Vɪᴅᴇᴏ Tᴏ Fɪʟᴇ & Fɪʟᴇ Tᴏ Vɪᴅᴇᴏ.
 Tʜɪs Bᴏᴛ Aʟꜱᴏ Sᴜᴘᴘᴏʀᴛs Cᴜsᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟ Aɴᴅ Cᴜsᴛᴏᴍ Cᴀᴘᴛɪᴏɴ
 """
 
     ABOUT_TXT = """<b>╭───────────⍟
 • ᴍy ɴᴀᴍᴇ : {}
-• ᴜᴘᴅᴀᴛᴇꜱ : <a href=https://t.me/KPSBots>ᴋᴘꜱ ʙᴏᴛꜱ</a>
+• ᴜᴘᴅᴀᴛᴇꜱ : <a href=https://t.me/TG_BotCreator>ᴛɢ ʙᴏᴛ ᴄʀᴇᴀᴛᴏʀ</a>
 ╰───────────────⍟ """
 
     HELP_TXT = """
 🌌 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ Tʜᴜᴍʙɴɪʟᴇ</u></b>
   
-<b>•></b> /start Tʜᴇ Bᴏᴛ Aɴᴅ Sᴇɴᴅ Aɴy Pʜᴏᴛᴏ Tᴏ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟy Sᴇᴛ Tʜᴜᴍʙɴɪʟᴇ.
+<b>•></b> /start Tʜᴇ Bᴏᴛ. Aɴᴅ Sᴇɴᴅ Aɴy Pʜᴏᴛᴏ Tᴏ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟy Sᴇᴛ Tʜᴜᴍʙɴɪʟᴇ.
 <b>•></b> /del_thumb Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Dᴇʟᴇᴛᴇ Yᴏᴜʀ Oʟᴅ Tʜᴜᴍʙɴɪʟᴇ.
 <b>•></b> /view_thumb Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Vɪᴇᴡ Yᴏᴜʀ Cᴜʀʀᴇɴᴛ Tʜᴜᴍʙɴɪʟᴇ.
 
@@ -64,12 +64,32 @@ Tʜɪs Bᴏᴛ Aʟꜱᴏ Sᴜᴘᴘᴏʀᴛs Cᴜsᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟ
 <b>•></b> /set_caption - Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴛ ᴀ Cᴜꜱᴛᴏᴍ Cᴀᴩᴛɪᴏɴ
 <b>•></b> /see_caption - Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Vɪᴇᴡ Yᴏᴜʀ Cᴜꜱᴛᴏᴍ Cᴀᴩᴛɪᴏɴ
 <b>•></b> /del_caption - Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Dᴇʟᴇᴛᴇ Yᴏᴜʀ Cᴜꜱᴛᴏᴍ Cᴀᴩᴛɪᴏɴ
+
 Exᴀᴍᴩʟᴇ: <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 💾 Sɪᴢᴇ: {filesize}
 ⏰ Dᴜʀᴀᴛɪᴏɴ: {duration} </code>
 
+
+📼 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ <a href=https://telegra.ph/file/f8fced59681fb8d0b4320.jpg>Mᴇᴛᴀᴅᴀᴛᴀ</a></u></b>
+
+<b>•></b> /metadata - Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴛ <a href=https://telegra.ph/file/f8fced59681fb8d0b4320.jpg>Mᴇᴛᴀᴅᴀᴛᴀ Cᴏᴅᴇ</a>
+
+
+ b><u>Hᴏᴡ Tᴏ Sᴇᴛ  <a href=https://telegra.ph/file/40ac3e17e25293f3e09af.jpg>Pʀᴇғɪx</a></u></b>
+
+<b>•></b> /set_prefix - Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴛ Pʀᴇғɪx
+<b>•></b> /see_prefix - Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴇ Cᴜʀʀᴇɴᴛ Pʀᴇғɪx
+<b>•></b> /del_prefix - Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Dᴇʟᴇᴛᴇ Pʀᴇғɪx
+
+
+📑 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ  <a href=https://telegra.ph/file/10eb85d77d8886e558986.jpg>Sᴜғғɪx</a></u></b>
+
+<b>•></b> /set_suffix - Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴛ Sᴜғғɪx
+<b>•></b> /see_suffix - Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴇ Cᴜʀʀᴇɴᴛ Sᴜғғɪx
+<b>•></b> /del_suffix - Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ Tᴏ Dᴇʟᴇᴛᴇ Sᴜғғɪx
+
 ✏️ <b><u>Hᴏᴡ Tᴏ Rᴇɴᴀᴍᴇ A Fɪʟᴇ</u></b>
-<b>•></b> Sᴇɴᴅ Aɴy Fɪʟᴇ Aɴᴅ Tyᴩᴇ Nᴇᴡ Fɪʟᴇ Nɴᴀᴍᴇ \nAɴᴅ Aᴇʟᴇᴄᴛ Tʜᴇ Fᴏʀᴍᴀᴛ [ document, video, audio ].
+<b>•></b> Sᴇɴᴅ Aɴy Fɪʟᴇ Aɴᴅ Tyᴩᴇ Nᴇᴡ Fɪʟᴇ Nᴀᴍᴇ \nAɴᴅ Sᴇʟᴇᴄᴛ Tʜᴇ Fᴏʀᴍᴀᴛ [ document, video, audio ].
 """
 
     SEND_METADATA = """
@@ -77,7 +97,7 @@ Exᴀᴍᴩʟᴇ: <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 
 ☞ Fᴏʀ Exᴀᴍᴘʟᴇ:
 
-◦ <code>Telegram : @KPSBots</code>
+◦ <code>Telegram : @TG_BotCreator</code>
 """
 
     PROGRESS_BAR = """<b>\n
@@ -87,3 +107,4 @@ Exᴀᴍᴩʟᴇ: <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 🚀 sᴘᴇᴇᴅ: {3}/s
 ⏰️ ᴇᴛᴀ: {4}
 ╰━━━━━━━━━━━━━━━ </b>"""
+    
