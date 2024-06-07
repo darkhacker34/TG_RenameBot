@@ -7,9 +7,9 @@ import humanize
 from time import sleep
 
 
-sd = @Client.on_message(filters.private & filters.command("start"))
+@Client.on_message(filters.private & filters.command("start"))
 await asyncio.sleep(10)
-await sd.delete()
+await on_message.delete()
 async def start(client, message):
 
     if message.from_user.id in Config.BANNED_USERS:
