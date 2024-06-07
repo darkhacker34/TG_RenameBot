@@ -23,7 +23,7 @@ async def get_stats(bot, message):
 @Client.on_message(filters.private & filters.command("restart") & filters.user(Config.ADMIN))
 async def restart_bot(b, m):
     rd = await m.reply_text("🔄 Rᴇꜱᴛᴀʀᴛɪɴɢ.....")
-    await asyncio.sleep(10)
+    await asyncio.sleep(20)
     await rd.delete()
     await m.delete()
     os.execl(sys.executable, sys.executable, *sys.argv)
