@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 import os, sys, time, asyncio, logging, datetime
-
+from bot import rstrt
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
  
@@ -23,9 +23,7 @@ async def get_stats(bot, message):
 @Client.on_message(filters.private & filters.command("restart") & filters.user(Config.ADMIN))
 async def restart_bot(b, m):
     rd = await m.reply_text("🔄 Rᴇꜱᴛᴀʀᴛɪɴɢ.....")
-    await asyncio.sleep(20)
-    await rd.delete()
-    await m.delete()
+    await rd.edit(rstrt)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 @Client.on_message(filters.command("broadcast") & filters.user(Config.ADMIN) & filters.reply)
