@@ -8,7 +8,8 @@ from time import sleep
 
 
 @Client.on_message(filters.private & filters.command("start"))
-return await message.delete()
+await asyncio.sleep(10)
+await command.delete()
 async def start(client, message):
 
     if message.from_user.id in Config.BANNED_USERS:
