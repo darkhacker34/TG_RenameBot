@@ -53,7 +53,7 @@ class Bot(Client):
 
         for id in Config.ADMIN:
             try:
-               rstrt = await self.send_message(id, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**")
+                await self.send_message(id, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**")
             except:
                 pass
 
