@@ -25,9 +25,6 @@ async def start(client, message):
     ]])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)
-    else:
-        await message.reply_text(text=Txt.START_TXT.format(user.mention), reply_markup=button, disable_web_page_preview=True)
-
 
 @Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
 async def rename_start(client, message):
@@ -57,7 +54,19 @@ async def rename_start(client, message):
 @Client.on_callback_query()
 async def cb_handler(client, query: CallbackQuery):
     data = query.data
-    if data == "help":
+    if data == "start":
+        await query.message.edit_text(
+            text=Txt.START_TXT.format(query.from_user.mention),
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([[
+                InlineKeyboardButton(
+                    '⛅ Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/TG_BotCreator')
+            ], [
+                InlineKeyboardButton('❄️ ᴀʙᴏᴜᴛ', callback_data='about'),
+                InlineKeyboardButton('❗ ʜᴇʟᴘ', callback_data='help')
+            ]])
+        )
+    elif data == "help":
         await query.message.edit_text(
             text=Txt.HELP_TXT,
             disable_web_page_preview=True,
@@ -84,4 +93,4 @@ async def cb_handler(client, query: CallbackQuery):
         except:
             await query.message.delete()
             await query.message.continue_propagation()
-            
+                                     
