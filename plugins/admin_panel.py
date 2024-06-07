@@ -25,6 +25,7 @@ async def restart_bot(b, m):
     rd = await m.reply_text("🔄 Rᴇꜱᴛᴀʀᴛɪɴɢ.....")
     await asyncio.sleep(10)
     await rd.delete()
+    await m.delete()
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 @Client.on_message(filters.command("broadcast") & filters.user(Config.ADMIN) & filters.reply)
