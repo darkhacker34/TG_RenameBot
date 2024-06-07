@@ -54,7 +54,7 @@ async def rename_start(client, message):
 @Client.on_callback_query()
 async def cb_handler(client, query: CallbackQuery):
     data = query.data
-    if data == "start":
+    if data == "back":
         await query.message.edit_text(
             text=Txt.START_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
@@ -72,7 +72,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("✘ ᴄʟᴏsᴇ", callback_data="close"),
-                InlineKeyboardButton("⟪ ʙᴀᴄᴋ", callback_data="start")
+                InlineKeyboardButton("⟪ ʙᴀᴄᴋ", callback_data="back")
             ]])
         )
     elif data == "about":
@@ -81,7 +81,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("✘ ᴄʟᴏsᴇ", callback_data="close"),
-                InlineKeyboardButton("⟪ ʙᴀᴄᴋ", callback_data="start")
+                InlineKeyboardButton("⟪ ʙᴀᴄᴋ", callback_data="back")
             ]])
         )
 
