@@ -22,15 +22,8 @@ async def get_stats(bot, message):
 #Restart to cancell all process 
 @Client.on_message(filters.private & filters.command("restart") & filters.user(Config.ADMIN))
 async def restart_bot(b, m):
- rd = await m.reply_text("🔄 __Rᴇꜱᴛᴀʀᴛɪɴɢ.....__")
- try:
-  await rd.message.delete()
-  await rd.message.reply_to_message.delete()
-  await rd.message.continue_propagation()
-  except:
-   await rd.message.delete()
-   await rd.message.continue_propagation()
-    
+ await m.reply_text("🔄 __Rᴇꜱᴛᴀʀᴛɪɴɢ.....__")
+
  os.execl(sys.executable, sys.executable, *sys.argv)
 
 
