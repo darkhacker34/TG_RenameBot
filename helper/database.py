@@ -15,7 +15,7 @@ class Database:
         return dict(
             _id = int(id),
             file_id = None,
-            caption = None,
+            caption = {filename}\n\n💾 Sɪᴢᴇ: {filesize}\n⏰ Dᴜʀᴀᴛɪᴏɴ: {duration},
             prefix = None,
             suffix = None,
             metadata = True,
