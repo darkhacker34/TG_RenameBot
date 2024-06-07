@@ -23,6 +23,7 @@ async def get_stats(bot, message):
 @Client.on_message(filters.private & filters.command("restart") & filters.user(Config.ADMIN))
 async def restart_bot(b, m):
     await m.reply_text("🔄 __Rᴇꜱᴛᴀʀᴛɪɴɢ.....__")
+    await asyncio.sleep(5)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
