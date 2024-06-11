@@ -26,7 +26,7 @@ async def start(client, message):
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)
     else:
-        await message.reply_photo(photo="https://telegra.ph/file/b0e2bcd90c621c51b906b.jpg", caption=Txt.START_TXT.format(user.mention), reply_markup=button, disable_web_page_preview=True)
+        await message.reply_photo(photo="https://telegra.ph/file/b0e2bcd90c621c51b906b.jpg", caption=START_TXT.format(user.mention), reply_markup=button, disable_web_page_preview=True)
 
 
 @Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
