@@ -24,12 +24,19 @@ async def start(client, message):
         InlineKeyboardButton('❄️ ᴀʙᴏᴜᴛ', callback_data='about'),
         InlineKeyboardButton('❗ ʜᴇʟᴘ', callback_data='help')
     ]])
+    
+    if Config.START_PIC:
         await message.reply_photo(
-            photo="https://telegra.ph/file/b0e2bcd90c621c51b906b.jpg",
+            Config.START_PIC,
             caption=Txt.START_TXT.format(user.mention),
+            disable_web_page_preview=True,
+            reply_markup=button)
+    else:
+        await message.reply_text(
+            text=Txt.START_TXT.format(user.mention),
             reply_markup=button,
-            disable_web_page_preview=True
-        )
+            disable_web_page_preview=True)
+        
 
 @Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
 async def rename_start(client, message):
