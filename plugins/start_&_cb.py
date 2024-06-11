@@ -13,6 +13,7 @@ async def start(client, message):
     if message.from_user.id in Config.BANNED_USERS:
         await message.reply_text("Sorry, You are banned.")
         return
+        
 
     user = message.from_user
     await db.add_user(client, message)
@@ -23,6 +24,12 @@ async def start(client, message):
         InlineKeyboardButton('❄️ ᴀʙᴏᴜᴛ', callback_data='about'),
         InlineKeyboardButton('❗ ʜᴇʟᴘ', callback_data='help')
     ]])
+        await message.reply_photo(
+            photo="https://telegra.ph/file/b0e2bcd90c621c51b906b.jpg",
+            caption=Txt.START_TXT.format(user.mention),
+            reply_markup=button,
+            disable_web_page_preview=True
+        )
 
 @Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
 async def rename_start(client, message):
